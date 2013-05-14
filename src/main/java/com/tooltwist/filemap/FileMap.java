@@ -164,5 +164,11 @@ public class FileMap {
 		boolean created = plugin.mkdirs(relativePath);
 		return created;
 	}
+	
+	public boolean deleteFile(String fileGroup, String relativePath) throws IOException {
+		IFileGroupAdaptor plugin = getFileGroup(fileGroup);
+		boolean deleted = plugin.deleteFile(relativePath);
+		return deleted;
+	}
 
 }

@@ -41,7 +41,11 @@ public interface IFileGroupAdaptor {
 	boolean mkdir(String relativePath) throws IOException;
 
 	boolean mkdirs(String relativePath) throws IOException;
-
+	
+	boolean deleteFile(String relativePath) throws IOException;
+	
 	String fileDescription(String relativePath);
-
+	
+	
+	
 }

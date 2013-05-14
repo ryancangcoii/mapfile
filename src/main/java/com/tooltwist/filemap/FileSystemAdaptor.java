@@ -114,4 +114,10 @@ public class FileSystemAdaptor implements IFileGroupAdaptor {
 		return "(local file: " + path + ")";
 	}
 
+	@Override
+	public boolean deleteFile(String relativePath) throws IOException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
